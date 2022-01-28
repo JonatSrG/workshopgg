@@ -43,8 +43,11 @@ window
             const price = document.createElement("div");
             price.textContent = formatPrice(item.price);
 
+            const taste = document.createElement("p");
+            taste.textContent = item.sku;
+
             const container = document.createElement("div");
-            container.append(imagen, title, price);
+            container.append(imagen, title, price, taste);
 
             todosLosItems.push(container);
         });
