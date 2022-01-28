@@ -5,6 +5,8 @@
 
 const baseUrl = "https://platzi-avo.vercel.app";
 
+const appNode = document.querySelector('#app');
+
 //web api
 //Conectarnos al servidor
 window
@@ -34,6 +36,6 @@ window
         todosLosItems.push(container);
     });
 
-    document.body.append(...todosLosItems);
+    appNode.append(...todosLosItems);
 })
 
